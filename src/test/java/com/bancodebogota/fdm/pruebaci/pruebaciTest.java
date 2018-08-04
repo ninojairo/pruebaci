@@ -43,7 +43,7 @@ public class pruebaciTest {
         int n2 = 2;
         pruebaci instance = new pruebaci();
         int expResult = 1;
-        int result = instance.sum(n1, n2);
+        int result = instance.dif(n1, n2);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
