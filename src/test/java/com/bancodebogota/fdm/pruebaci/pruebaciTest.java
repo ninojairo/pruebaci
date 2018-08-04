@@ -32,6 +32,22 @@ public class pruebaciTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
+    
+    /**
+     * Test of dif method, of class pruebaci.
+     */
+    @Test
+    public void testDif() {
+        System.out.println("sum");
+        int n1 = 3;
+        int n2 = 2;
+        pruebaci instance = new pruebaci();
+        int expResult = 1;
+        int result = instance.sum(n1, n2);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
 
     /**
      * Test of main method, of class pruebaci.
