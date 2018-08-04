@@ -20,6 +20,7 @@ public class CollectionSample {
     private int size; //amount of numbers to iterate
     private List<String> arrayList = null; //source of data
     
+    
     /**
      * Constructor to create instances of member fields
      * @size is the amount of numbers to transverse
@@ -209,6 +210,10 @@ public class CollectionSample {
         CollectionSample collectionSample = new CollectionSample(1000000, false);
         long startTime = 0L;
         long endTime = 0L;
+        final String MILISECONDS = " Miliseconds ";
+        final String THAT = " That took ";
+    
+        
 
 
         collectionSample.initArray();
@@ -216,38 +221,38 @@ public class CollectionSample {
         startTime = System.currentTimeMillis();
         collectionSample.oderArrayWithComparator();
         endTime = System.currentTimeMillis();
-        System.out.println("That took " + (endTime - startTime) + " milliseconds");
+        System.out.println(THAT + (endTime - startTime) + MILISECONDS);
         
         System.out.println(" **** orderingDataWithLambdaExpressionAndComparatorAsString ***** ");
         startTime = System.currentTimeMillis();
         collectionSample.orderingDataWithLambdaExpressionAndComparatorAsString();
         endTime = System.currentTimeMillis();
-        System.out.println("That took " + (endTime - startTime) + " milliseconds");
+        System.out.println(THAT + (endTime - startTime) + MILISECONDS);
         
         System.out.println(" **** orderingDataWithPureLambdaExpressionString ***** ");
         startTime = System.currentTimeMillis();
         collectionSample.orderingDataWithPureLambdaExpressionString();
         endTime = System.currentTimeMillis();
-        System.out.println("That took " + (endTime - startTime) + " milliseconds");
+        System.out.println(THAT + (endTime - startTime) + MILISECONDS);
         
         System.out.println(" **** oderArrayWithComparatorInteger ***** ");
         startTime = System.currentTimeMillis();
         collectionSample.oderArrayWithComparatorInteger();
         endTime = System.currentTimeMillis();
-        System.out.println("That took " + (endTime - startTime) + " milliseconds");
+        System.out.println(THAT + (endTime - startTime) + MILISECONDS);
         
         System.out.println(" **** orderingDataWithLambdaExpressionAndComparatorAsInteger ***** ");
         startTime = System.currentTimeMillis();
         collectionSample.orderingDataWithLambdaExpressionAndComparatorAsInteger();
         endTime = System.currentTimeMillis();
-        System.out.println("That took " + (endTime - startTime) + " milliseconds");
+        System.out.println(THAT + (endTime - startTime) + MILISECONDS);
         
         
         System.out.println(" **** orderingDataWithPureLambdaExpressionInteger() ***** ");
         startTime = System.currentTimeMillis();
         collectionSample.orderingDataWithPureLambdaExpressionInteger();
         endTime = System.currentTimeMillis();
-        System.out.println("That took " + (endTime - startTime) + " milliseconds");
+        System.out.println(THAT + (endTime - startTime) + MILISECONDS);
         
     }
     
