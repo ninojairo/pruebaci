@@ -39,10 +39,10 @@ public class pruebaciTest {
     @Test
     public void testDif() {
         System.out.println("sum");
-        int n1 = 3;
+        int n1 = 4;
         int n2 = 2;
         pruebaci instance = new pruebaci();
-        int expResult = 1;
+        int expResult = 2;
         int result = instance.dif(n1, n2);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
